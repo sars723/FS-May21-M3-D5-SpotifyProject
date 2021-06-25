@@ -379,7 +379,7 @@
       const search = () => {
         console.log(searchFieldValue.value);
         searchQuery = searchFieldValue.value;
-        fecthData(searchQuery);
+        fecthData(searchQuery.toLowerCase());
       };
       const displayAlbum = (albums) => {
         albumContainer.innerHTML = "";
